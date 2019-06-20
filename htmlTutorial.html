@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!required first line of any webpage!
+tells the browser which version of html to expect. This one is for html5>
+<html> <!opening tag>
+  <!everything else goes between these 2>
+
+  <head> <!info about the page goes here>
+    <title>Hello World</title> <!text displayed in a web browser's title bar>
+  </head>
+
+  <body> <!actual content goes here>
+
+    <!can give any tags (even self-closing or "void" tags)>
+    <!the attribues 'id' and 'class' (useful for targeting with CSS(?))>
+    <!'id' must be unique for each element>
+    <!'class' is used for targeting a group of elements>
+    <div id="header"> <!div tags are used to separate content into different sections.
+            they cause linebreaks before and after themselves, and can be nested.>
+
+      <h1>Hello World</h1> <!heading tag, (h1 - h6 available, 1=large, 6=small)>
+    </div>
+
+    <div class="my-class">
+      <!there are also span tags, which are like div tags that don't make linebreaks.
+        this is useful when you want to do something like make a single word in
+        a sentence a different color.>
+      <p>This is my <span class="red">first</span> webpage. <br />I hope you like it.</p> <!paragraph tag>
+                                 <!break tag bk for new line>
+    <hr /> <!horizontal line tag, can be used to separate sections>
+    <p>Another paragraph.</p> <!for more paragraphs add more p tags>
+
+    <h2 class="my-class">An Image</h2>
+    <!<img src="electricbobsostrich.png" /> <!img tag for images, a self-closing>
+                                          <!tag that you set attributes inside>
+    <!more attributes set, width and height plain numbers = #pixels>
+    <!alt attribute is a short discription of a picture, required to be valid>
+    <!html that follows standards, doesn't show up when looking at the image >
+    <!but is what is seen from a solely text-based browser.>
+    <img src="electricbobsostrich.png" width="200" height="500" alt="Ostrich"/>
+    </div>
+
+    <div class="my-class">
+      <a href="https://google.com">GO GOOGLE!</a> <!'a' tag for making hyperlinks>
+
+      <!ul tag for unordered list, makes bullet pointed list>
+      <ul>
+        <!li tag makes a list item that will be part of a list>
+        <li> Item 1</li>
+        <li> Item 2</li>
+      </ul>
+
+      <!ol tag for ordered list, swaps bullets for numbers>
+      <ol>
+        <!li tag makes a list item that will be part of a list>
+        <li> Item 1</li>
+        <li> Item 2</li>
+      </ol>
+    </div>
+
+    <div class="my-other-class">
+      Copyright &copy; <!example of how to make the copyright symbol>
+      <!can google html entities for more codes like &copy;>
+    </div>
+  </body>
+</html> <!closing tag>
